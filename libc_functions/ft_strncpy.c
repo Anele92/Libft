@@ -1,5 +1,14 @@
-#include <stdio.h>
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/21 13:28:27 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/21 13:29:01 by anoroita         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, size_t num)
 {
@@ -13,14 +22,4 @@ char	*ft_strncpy(char *dest, char *src, size_t num)
 	}
 	dest[index] = '\0';
 	return (dest);
-}
-
-int	main(void)
-{
-	char	str1[] = "Face off";
-	char	str2[10];
-
-	ft_strncpy(str2, str1, 4);
-	printf("Copied %s\n", str2);
-	return (0);
 }

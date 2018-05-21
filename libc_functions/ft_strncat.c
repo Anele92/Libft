@@ -1,5 +1,14 @@
-#include <string.h>
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/21 13:32:12 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/21 13:32:20 by anoroita         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 char	*ft_strncat(char *dest, char *src, size_t num)
 {
@@ -15,13 +24,4 @@ char	*ft_strncat(char *dest, char *src, size_t num)
 	}
 	dest[dest_len + index] = '\0';
 	return (dest);
-}
-
-int	main(void)
-{
-	char	s1[100] = "WeThink";
-	char	s2[] = "Code_Africa";
-	ft_strncat(s1, s2, 11);
-	printf("%s\n", s1);
-	return (0);
 }
