@@ -10,39 +10,27 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-unsigned	int	ft_strlcat(char *dest, char *src, unsigned int size)
+int	ft_strlcat(char *dst, char *src, int size)
 {
-	int	i;
-	int	d;
-	int	sum;
+	size_t	i;
+	size_t	dstlength;
+	size_t	srclength;
 
-	d = 0;
 	i = 0;
-	while (dest[i] != '\0')
-	{
+	dstlength = ft_strlen(dst);
+	srclength = ft_strlen(src);
+	if (size <= dstlength)
+		return (srclength + size);
+	while ((dst[i] != '\0') && i < (size - 1))
 		i++;
-	}
-	while (src[d] != '\0' && d < size)
+	while (*src && i < (size - 1))
 	{
-		dest[i + d] = src[d];
-		d++;
+		dst[i] = *src;
+		i++;
+		src++;
 	}
-	dest[i + d] = '\0';
-	i++;
-	d++;
-	sum = i + d;
-	return (sum);
-}
-
-int	main(void)
-{
-	unsigned int	res;
-
-	res = ft_strlcat("Anele", "Noroita", 100);
-	printf("%d\n", res);
-	return (0);
+	dst[i] = '\0';
+	return (dstlength + srclength);
 }
