@@ -10,22 +10,39 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcat(char *dst, char *src, size_t size)
-{
-	size_t	index;
-	size_t	len;
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
-	len = strlen(dst) + strlen(src);
-	if (size <= strlen(dst))
-		return (strlen(src) + size);
-	while (*dst)
-		dst++;
-	index = 0;
-	while ((index < size - (len - strlen(src)) - 1) && src[index])
+unsigned	int	ft_strlcat(char *dest, char *src, unsigned int size)
+{
+	int	i;
+	int	d;
+	int	sum;
+
+	d = 0;
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		dst[index] = src[index];
-		index++;
+		i++;
 	}
-	dst[index] = '\0';
-	return (len);
+	while (src[d] != '\0' && d < size)
+	{
+		dest[i + d] = src[d];
+		d++;
+	}
+	dest[i + d] = '\0';
+	i++;
+	d++;
+	sum = i + d;
+	return (sum);
+}
+
+int	main(void)
+{
+	unsigned int	res;
+
+	res = ft_strlcat("Anele", "Noroita", 100);
+	printf("%d\n", res);
+	return (0);
 }
