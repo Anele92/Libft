@@ -5,30 +5,27 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/21 13:32:55 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/21 13:37:40 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/21 15:17:09 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/21 16:45:02 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t			ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, char *src, size_t size)
 {
-	size_t		i;
-	size_t		dstlength;
-	size_t		srclength;
+	size_t	index;
+	size_t	len;
 
-	i = 0;
-	dstlength = ft_strlen(dst);
-	srclength = ft_strlen(src);
-	if (size <= dstlength)
-		return (srclength + size);
-	while ((dst[i] != '\0') && i < (size - 1))
-		i++;
-	while (*src && i < (size - 1))
+	len = strlen(dst) + strlen(src);
+	if (size <= strlen(dst))
+		return (strlen(src) + size);
+	while (*dst)
+		dst++;
+	index = 0;
+	while ((index < size - (len - strlen(src)) - 1) && src[index])
 	{
-		dst[i] = *src;
-		i++;
-		src++;
+		dst[index] = src[index];
+		index++;
 	}
-	dst[i] = '\0';
-	return (dstlength + srclength);
+	dst[index] = '\0';
+	return (len);
 }
