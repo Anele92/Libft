@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/22 15:38:03 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 15:42:37 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/22 17:05:46 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/22 17:05:50 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
+# include <string.h>
+# include <unistd.h>
+# include <stdlib.h>
 
-char	*ft_strdup(char *src)
-{
-	int		len;
-	char	*dest;
+# define BUFF_SIZE 100
+# define IS_SPACE(x) (x == ' ' || x == '\t' || x == '\r' || x == '\f')
 
-	len = ft_strlen(src);
-	if (!(dest = (char *)malloc(sizeof(char) * (len + 1))))
-		return (NULL);
-	dest[len] = '\0';
-	while (len >= 0)
-	{
-		dest[index] = src[index];
-		len--;
-	}
-	return (dest);
-}
+#endif

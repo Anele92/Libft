@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/22 15:38:03 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 15:42:37 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/22 16:59:43 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/22 17:00:02 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "lift.h"
 
-char	*ft_strdup(char *src)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int		len;
-	char	*dest;
+	int	result;
+	int	i;
 
-	len = ft_strlen(src);
-	if (!(dest = (char *)malloc(sizeof(char) * (len + 1))))
-		return (NULL);
-	dest[len] = '\0';
-	while (len >= 0)
+	i = 0;
+	while (s1[i] != '\0' && s2[i] != '\0' && i < n)
 	{
-		dest[index] = src[index];
-		len--;
+		if (s1[i] != s2[i])
+		{
+			return (s1[i] - s2[i]);
+		}
+		i++;
 	}
-	return (dest);
+	return (0);
 }

@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/22 15:38:03 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 15:42:37 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/22 17:01:00 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/22 17:01:34 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "strrchr.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strrchr(const char *s, int c)
 {
-	int		len;
-	char	*dest;
+	int		i;
 
-	len = ft_strlen(src);
-	if (!(dest = (char *)malloc(sizeof(char) * (len + 1))))
-		return (NULL);
-	dest[len] = '\0';
-	while (len >= 0)
-	{
-		dest[index] = src[index];
-		len--;
-	}
-	return (dest);
+	i = ft_strlen(s) + 1;
+	while (--i >= -1)
+		if (s[i] == c)
+			return ((char *)&s[i]);
+	return (NULL);
 }

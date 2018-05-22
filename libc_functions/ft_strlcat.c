@@ -1,10 +1,22 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/21 15:17:09 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/21 16:45:02 by anoroita         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-size_t			ft_strlcat(char *dst, const char *src, size_t size)
+#include "libft.h"
+
+int	ft_strlcat(char *dst, char *src, int size)
 {
-	size_t		i;
-	size_t		dstlength;
-	size_t		srclength;
+	size_t	i;
+	size_t	dstlength;
+	size_t	srclength;
 
 	i = 0;
 	dstlength = ft_strlen(dst);

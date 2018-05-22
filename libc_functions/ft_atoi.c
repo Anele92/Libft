@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/22 15:38:03 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 15:42:37 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/22 08:59:49 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/22 10:33:30 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+int		ft_atoi(const char *str)
 {
-	int		len;
-	char	*dest;
+	int	i;
+	int	nbr;
+	int	sign;
 
-	len = ft_strlen(src);
-	if (!(dest = (char *)malloc(sizeof(char) * (len + 1))))
-		return (NULL);
-	dest[len] = '\0';
-	while (len >= 0)
+	nbr = 0;
+	sign = 1;
+	i = 0;
+	while (IS_SPACE(str[i]))
+		i++;
+	if (str[i] == '-')
+		sign = -1;
+	while (str[i] && (str[i] >= '0') && (str[i] <= '9'))
 	{
-		dest[index] = src[index];
-		len--;
+		nbr *= 10;
+		nbr += (int)str[i] - '0';
+		i++;
 	}
-	return (dest);
+	return (nbr * sign);
 }

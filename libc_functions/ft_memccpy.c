@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/22 15:38:03 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 15:42:37 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/22 15:27:34 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/22 15:30:35 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+void	*ft_memccpy(void *s1, const void *s2, int c, size_t n)
 {
-	int		len;
-	char	*dest;
+	unsigned char			*dest;
+	const unsigned char		*src;
+	size_t					i;
 
-	len = ft_strlen(src);
-	if (!(dest = (char *)malloc(sizeof(char) * (len + 1))))
-		return (NULL);
-	dest[len] = '\0';
-	while (len >= 0)
+	if (s2 != NULL)
 	{
-		dest[index] = src[index];
-		len--;
+		src = s2;
+		dest = s1;
+		i = 0;
+		while (i < n * sizeof(unsigned char))
+		{
+			dest[i] = src[i];
+			if (dest[i] == (unsigned char)c)
+				return (dest + i + 1);
+			i++;
+		}
 	}
-	return (dest);
+	return (NULL);
 }
