@@ -1,25 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_test.c                                        :+:      :+:    :+:   */
+/*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/24 07:50:55 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 07:51:37 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/24 11:00:52 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/24 11:06:08 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, char *src, size_t size);
-
-int		main(void)
+void	ftstriter(char *s, void (*f)(char *))
 {
-	size_t	res;
-
-	res = ft_strlcat("Anele", "Noroita", 4);
-	printf("%ld\n", res);
-	return (0);
+	if (!s || !f)
+		return (0);
+	while (*s)
+		f(s++);
 }

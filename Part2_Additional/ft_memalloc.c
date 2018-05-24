@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_test.c                                        :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/24 07:50:55 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 07:51:37 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/24 08:02:45 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/24 09:37:32 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, char *src, size_t size);
+void	*ft_memset(void *s, int c, size_t len);
 
-int		main(void)
+void	*ft_memalloc(size_t size)
 {
-	size_t	res;
+	void	*fresh;
 
-	res = ft_strlcat("Anele", "Noroita", 4);
-	printf("%ld\n", res);
-	return (0);
+	if (!size)
+		return (0);
+	fresh = malloc(sizeof(*fesh) * size);
+	if (!fresh)
+		return (0);
+	fresh = ft_memset(fresh, 0, size);
+	return (fresh);
 }

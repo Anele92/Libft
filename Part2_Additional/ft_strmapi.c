@@ -1,41 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/21 15:17:09 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 07:55:21 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/24 11:51:45 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/24 12:31:10 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str);
-
-size_t	ft_strlcat(char *dst, char *src, size_t size)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	sum;
-	size_t	i;
+	unsigned int	i;
+	char			*d;
 
 	i = 0;
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	if (size < dst_len)
-		sum = size + src_len;
-	else
+	while (s[i])
+		i++;
+	d = malloc(sizeof(char) * i + 1);
+	if (!d)
+		return (0);
+	i = 0;
+	while (s[i])
 	{
-		while (dst_len < size)
-		{
-			dst[dst_len + 1] = (char)src[i];
-			dst_len++;
-			src_len++;
-		}
-		dst[dst_len] = '\0';
-		sum = ft_strlen(dst) + ft_strlen(src);
+		d[i] = f(i, s[i]);
+		i++;
 	}
-	return (sum);
+	d[i] = '\0';
+	return (d);
 }

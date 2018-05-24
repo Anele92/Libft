@@ -1,41 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/21 15:17:09 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 07:55:21 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/24 12:31:52 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/24 12:37:50 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str);
-
-size_t	ft_strlcat(char *dst, char *src, size_t size)
+int		ft_strequ(char const *s1, char const *s2)
 {
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	sum;
 	size_t	i;
 
 	i = 0;
-	dst_len = ft_strlen(dst);
-	src_len = ft_strlen(src);
-	if (size < dst_len)
-		sum = size + src_len;
-	else
+	while (s1[i] && s2[i])
 	{
-		while (dst_len < size)
-		{
-			dst[dst_len + 1] = (char)src[i];
-			dst_len++;
-			src_len++;
-		}
-		dst[dst_len] = '\0';
-		sum = ft_strlen(dst) + ft_strlen(src);
+		if (s1[i] == s2[i])
+			i++;
+		else
+			return (0);
 	}
-	return (sum);
+	if ((s1[i] && !s2[i]) || (!s1[i] && s2[i]))
+		return (0);
+	return (1);
 }

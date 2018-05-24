@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_test.c                                        :+:      :+:    :+:   */
+/*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/24 07:50:55 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 07:51:37 by anoroita         ###   ########.fr       */
+/*   Created: 2018/05/24 09:33:57 by anoroita          #+#    #+#             */
+/*   Updated: 2018/05/24 10:24:37 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, char *src, size_t size);
-
-int		main(void)
+void	ft_memdel(void **ap)
 {
-	size_t	res;
-
-	res = ft_strlcat("Anele", "Noroita", 4);
-	printf("%ld\n", res);
-	return (0);
+	free(*ap);
+	*ap = 0;
 }
