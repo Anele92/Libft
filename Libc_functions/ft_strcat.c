@@ -6,13 +6,11 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 13:26:08 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 14:58:43 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/28 16:14:10 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(char	*str);
 
 char	*ft_strcat(char *dest, char *src)
 {

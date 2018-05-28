@@ -6,13 +6,13 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 11:00:52 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 11:06:08 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/28 16:34:26 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ftstriter(char *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
 	if (!s || !f)
 		return (0);

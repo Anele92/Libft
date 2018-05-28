@@ -6,13 +6,11 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 08:02:45 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 09:37:32 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/28 16:16:28 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memset(void *s, int c, size_t len);
 
 void	*ft_memalloc(size_t size)
 {
