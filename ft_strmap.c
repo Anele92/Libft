@@ -6,13 +6,13 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 11:41:58 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 11:49:41 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/29 13:03:18 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_strmap(char const *s, char (*f)(char))
+char	*ft_strmap(char const *s, char (*f)(char))
 {
 	size_t	i;
 	char	*d;
