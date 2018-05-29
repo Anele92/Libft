@@ -6,28 +6,36 @@
 #    By: anoroita <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/29 13:52:05 by anoroita          #+#    #+#              #
-#    Updated: 2018/05/29 14:03:17 by anoroita         ###   ########.fr        #
+#    Updated: 2018/05/29 14:20:22 by anoroita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
 NAME = libft.a
-PATH_SRC = ./src/
-HEADER = ./includes/
-FLAG = -Wall -Wextra -Werror
-OPTION = -c -I $(HEADER)
-SRC = $(PATH_SRC)*.c
-OBJ = *.o
+SHARED = libft.so
 
-all: $(NAME)
+SRCS = ft_isalnum.c ft_isprint.c ft_memchr.c ft_memmove.c ft_putendl.c\
+ft_putstr.c ft_strclr.c ft_strdup.c ft_strjoin.c ft_strmapi.c\
+ft_strnequ.c ft_strstr.c ft_toupper.c ft_isalpha.c ft_itoa.c\
+ft_memcmp.c ft_memset.c ft_putendl_fd.c ft_putstr_fd.c ft_strcmp.c\
+ft_strequ.c ft_strlcat.c ft_strncat.c	ft_strnew.c ft_strsub.c\
+ft_atoi.c ft_isascii.c	ft_memalloc.c ft_memcpy.c ft_putchar.c\
+ft_putnbr.c ft_strcat.c ft_strcpy.c ft_striter.c ft_strlen.c\
+ft_strncmp.c ft_strnstr.c ft_strtrim.c\
+ft_bzero.c ft_isdigit.c ft_memccpy.c ft_memdel.c ft_putchar_fd.c\
+ft_putnbr_fd.c ft_strchr.c ft_strdel.c ft_striteri.c ft_strmap.c\
+ft_strncpy.c ft_strrchr.c ft_tolower.c ft_strsplit.c
 
-$(NAME):
-	gcc $(FLAG) $(OPTION) $(SRC)
-	ar rc $(NAME) $(OBJ)
+OBJ = $(SRCS:.c=.o)
+
+all:
+	@gcc -c -Wall -Wextra -Werror $(SRCS)
+	@ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
 
 clean:
-	/bin/rm -f $(OBJ)
+	@/bin/rm -f *.o
+
 fclean: clean
-	/bin/rm -f $(NAME)
+	@/bin/rm -f $(NAME) $(SHARED)
 
 re: fclean all
