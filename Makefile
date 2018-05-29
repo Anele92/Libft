@@ -5,27 +5,30 @@
 #                                                     +:+ +:+         +:+      #
 #    By: anoroita <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/05/29 13:05:56 by anoroita          #+#    #+#              #
-#    Updated: 2018/05/29 13:27:30 by anoroita         ###   ########.fr        #
+#    Created: 2018/05/29 13:52:05 by anoroita          #+#    #+#              #
+#    Updated: 2018/05/29 13:54:21 by anoroita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+
 NAME = libft.a
-SHARED = libft.so
+PATH_SRC = ./src/
+HEADER = ./includes/
+FLAG = -Wall -Wextra -Werror
+OPTION = -c -I $(HEADER)
+SRC = $(PATH_SRC)ft_putchar.c $(PATH_SRC)ft_putstr.c $(PATH_SRC)ft_strcmp.c \
+		$(PATH_SRC)ft_strlen.c $(PATH_SRC)ft_swap.c
+OBJ = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
 
-SRCS = *.c
+all: $(NAME)
 
-OBJ = *.o
-
-all:
-	gcc -c -Wall -Wextra -Werror $(SRCS)
+$(NAME):
+	gcc $(FLAG) $(OPTION) $(SRC)
 	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
 
 clean:
-	/bin/rm -f *.o
-
+	/bin/rm -f $(OBJ)
 fclean: clean
-	/bin/rm -f $(NAME) $(SHARED)
+	/bin/rm -f $(NAME)
 
 re: fclean all
