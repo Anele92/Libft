@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 17:05:46 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/29 13:01:37 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/29 13:03:53 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t		ft_strlcat(char *dst, const char *str, size_t size);
 int		ft_strlen(char *str);
-char	ft_strmap(char const *s, char (*f)(char));
+char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strncat(char *dest, char *src, size_t num);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
