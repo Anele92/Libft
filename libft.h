@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 17:05:46 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/30 09:04:12 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 18:03:39 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	ft_putstr_fd(char const *s, int fd);
 char	*ft_strcat(char *dest, char *src);
 char	*ft_strchr(const char *str, int c);
 void	ft_strclr(char *s);
-int		ft_strcmp(char *s1, char *s2);
+int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strcpy(char *dest, char *str);
 void	ft_strdel(char **as);
 char	*ft_strdup(char *src);
@@ -67,7 +67,7 @@ char	*ft_strnew(size_t size);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char		**ft_strsplit(const char *str, char c);
-char	*ft_strstr(char *str, char *to_find);
+char	*ft_strstr(const char *haystack, const char *needle);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s);
 int		ft_tolower(int c);
