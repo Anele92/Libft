@@ -6,9 +6,11 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 13:28:27 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 15:05:08 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 11:18:02 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strncpy(char *dest, char *src, size_t num)
 {

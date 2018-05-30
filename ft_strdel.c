@@ -6,11 +6,11 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 10:35:21 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 10:46:31 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 09:05:37 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lift.h"
+#include "libft.h"
 
 void	ft_strdel(char **as)
 {

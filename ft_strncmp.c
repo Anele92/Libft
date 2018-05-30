@@ -6,11 +6,11 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 16:59:43 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 17:00:02 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 10:25:55 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lift.h"
+#include "libft.h"
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {

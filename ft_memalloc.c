@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 08:02:45 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/28 16:16:28 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 08:36:10 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memalloc(size_t size)
 
 	if (!size)
 		return (0);
-	fresh = malloc(sizeof(*fesh) * size);
+	fresh = malloc(sizeof(*fresh) * size);
 	if (!fresh)
 		return (0);
 	fresh = ft_memset(fresh, 0, size);

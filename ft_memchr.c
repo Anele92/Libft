@@ -6,9 +6,11 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 16:32:25 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 16:35:47 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/29 15:07:42 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

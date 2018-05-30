@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 17:05:46 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/29 13:03:53 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 09:04:12 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdlib.h>
 
 # define BUFF_SIZE 100
-# define IS_SPACE(x) ((x >= 8 && x <= 13) || x == 32)
+# define IS_SPACE(x) ((x >= 9 && x <= 13) || x == 32)
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -47,7 +47,7 @@ void	ft_putstr_fd(char const *s, int fd);
 char	*ft_strcat(char *dest, char *src);
 char	*ft_strchr(const char *str, int c);
 void	ft_strclr(char *s);
-int		*ft_strcmp(char *s1, char *s2);
+int		ft_strcmp(char *s1, char *s2);
 char	*ft_strcpy(char *dest, char *str);
 void	ft_strdel(char **as);
 char	*ft_strdup(char *src);

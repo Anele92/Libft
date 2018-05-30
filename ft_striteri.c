@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 11:06:54 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 11:12:36 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 09:28:08 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 
 	i = 0;
 	if (!s || !f)
-		return (0);
+		return (NULL);
 	while (*s)
 	{
 		f(i, s++);

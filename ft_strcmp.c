@@ -6,13 +6,13 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 16:37:47 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 16:38:04 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 08:38:30 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(char *s1, char *s2)
 {
 	int	i;
 

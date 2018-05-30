@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 15:38:48 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/28 16:44:10 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 12:13:19 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strtrim(char const *s)
 	int		i;
 	int		j;
 
-	len = (int)(ft_strlen(s) - 1);
+	len = (int)(ft_strlen((char *)s) - 1);
 	i = 0;
 	j = 0;
 	while (IS_SPACE(s[i]))

@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 11:12:50 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/28 11:20:33 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 08:37:20 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_putendl(char	const *s)
 {
-	ft_putstr(s);
+	ft_putstr((char *)s);
 	ft_putchar('\n');
 }
