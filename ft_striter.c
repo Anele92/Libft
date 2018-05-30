@@ -6,17 +6,17 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 11:00:52 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/30 12:35:58 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 13:20:54 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_striter(char *s, void (*f)(char* ))
+void	ft_striter(char *s, void (*f)(char*))
 {
-    if (s && f)
-    {
-        while (*s)
-            f(s++);
-    }
+	if (s && f)
+	{
+		while (*s)
+			f(s++);
+	}
 }
