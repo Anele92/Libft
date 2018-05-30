@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 15:11:20 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 15:13:24 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 12:55:49 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*tmp;
 
 	if (n > 0)

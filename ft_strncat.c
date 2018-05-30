@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 13:32:12 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 16:19:05 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 12:40:21 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strncat(char *dest, char *src, size_t num)
 {
-	int		index;
+	size_t	index;
 	size_t	dest_len;
 
 	index = 0;
