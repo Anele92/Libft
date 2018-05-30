@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 16:36:16 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/22 16:36:47 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 16:58:50 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,12 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t			i;
 	unsigned char	*dest;
 
-	if (b != NULL)
+	i = 0;
+	dest = b;
+	while (i < len)
 	{
-		i = 0;
-		dest = b;
-		while (i < len)
-		{
-			dest[i] = (unsigned char)c;
-			i++;
-		}
-		return (dest);
+		dest[i] = (unsigned char)c;
+		i++;
 	}
-	else
-		return (b);
+	return (dest);
 }

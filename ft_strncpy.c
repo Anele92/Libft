@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 13:28:27 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/30 11:18:02 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 14:59:09 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ char	*ft_strncpy(char *dest, char *src, size_t num)
 	while (index < num)
 	{
 		dest[index] = '\0';
+		index++;
 	}
 	return (dest);
 }

@@ -6,7 +6,7 @@
 #    By: anoroita <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/30 12:24:33 by anoroita          #+#    #+#              #
-#    Updated: 2018/05/30 12:24:38 by anoroita         ###   ########.fr        #
+#    Updated: 2018/05/30 13:56:39 by anoroita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,9 @@ ft_strncpy.c ft_strrchr.c ft_tolower.c ft_strsplit.c
 
 OBJ = $(SRCS:.c=.o)
 
-all:
+all: $(NAME)
+
+$(NAME):
 	@gcc -c -Wall -Wextra -Werror $(SRCS)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)

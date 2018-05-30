@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 16:32:25 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/29 15:07:42 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/30 16:24:31 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	const unsigned char		*tmp;
 	unsigned char			find;
 
-	if (s == NULL)
-		return (NULL);
 	find = c;
 	tmp = s;
 	i = 0;
