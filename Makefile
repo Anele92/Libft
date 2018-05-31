@@ -6,12 +6,11 @@
 #    By: anoroita <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/30 12:24:33 by anoroita          #+#    #+#              #
-#    Updated: 2018/05/30 13:56:39 by anoroita         ###   ########.fr        #
+#    Updated: 2018/05/31 08:42:29 by anoroita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-SHARED = libft.so
 
 SRCS = ft_isalnum.c ft_isprint.c ft_memchr.c ft_memmove.c ft_putendl.c\
 ft_putstr.c ft_strclr.c ft_strdup.c ft_strjoin.c ft_strmapi.c\
@@ -38,6 +37,6 @@ clean:
 	@/bin/rm -f *.o
 
 fclean: clean
-	@/bin/rm -f $(NAME) $(SHARED)
+	@/bin/rm -f $(NAME)
 
 re: fclean all

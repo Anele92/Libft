@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 08:18:54 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/30 12:12:02 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/31 15:50:19 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,8 @@ char			**ft_strsplit(const char *str, char c)
 
 	i = 0;
 	j = 0;
+	if (!(str))
+		return (NULL);
 	wrd = ft_count_words(str, c);
 	if (!(s = (char **)malloc(sizeof(s) * (ft_count_words(str, c) + 2))))
 		return (NULL);

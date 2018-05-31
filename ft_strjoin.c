@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 14:55:43 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/30 09:44:27 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/31 12:38:47 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
+	if (!(s1 && s2))
+		return (0);
 	sum = ft_strlen((char *)s1) + ft_strlen((char *)s2);
-	d = (char *)malloc(sizeof(char) * sum + 1);
-	if (!d)
+	if (!(d = (char *)malloc(sizeof(char) * sum + 1)))
 		return (0);
 	while (s1[i])
 	{

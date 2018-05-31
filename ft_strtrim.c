@@ -6,33 +6,39 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 15:38:48 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/30 12:13:19 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/31 15:10:46 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-char	*ft_strtrim(char const *s)
+char	*ft_strtrim(const char *s)
 {
-	int		len;
-	char	*d;
-	int		i;
-	int		j;
+	size_t	start;
+	size_t	len;
+	char *str;
 
-	len = (int)(ft_strlen((char *)s) - 1);
-	i = 0;
-	j = 0;
-	while (IS_SPACE(s[i]))
-		i++;
-	d = (char*)malloc(sizeof(char) * (len - i + 1));
-	while (IS_SPACE(s[len]))
+	start = 0;
+	if (!s)
+		return (NULL);
+	while (((s[start] == ' ') || (s[start] == '\n')
+			|| (s[start] == '\t')) && (s[start] != '\0'))
+		start++;
+	len = ft_strlen((char *)s);
+	while (((s[len - 1] == ' ') || (s[len - 1] == '\n')
+			|| (s[len - 1] == '\t')) && (s[start] != '\0'))
 		len--;
-	while (i <= len)
-	{
-		d[j] = s[i];
-		i++;
-		j++;
-	}
-	d[j] = '\0';
-	return (d);
+	str = ft_strsub(s, start, len - start);
+	if (str)
+		return (str);
+	return (NULL);
+}
+
+int		main(void)
+{
+	char	name[] = "   	Zolile	 ";
+
+	printf("%s\n", ft_strtrim(name));
+	return (0);
 }

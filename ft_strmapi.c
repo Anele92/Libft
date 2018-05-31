@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 11:51:45 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/24 12:31:10 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/05/31 12:17:27 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*d;
 
 	i = 0;
+	if (!(s))
+		return (NULL);
 	while (s[i])
 		i++;
 	d = malloc(sizeof(char) * i + 1);
