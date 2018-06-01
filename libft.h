@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 17:05:46 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/31 10:46:05 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/01 15:43:59 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ char	*ft_strnew(size_t size);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char		**ft_strsplit(const char *str, char c);
-char	*ft_strstr(const char *haystack, const char *needle);
+char    *ft_strstr(char *str, char *to_find);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strtrim(char const *s);
 int		ft_tolower(int c);

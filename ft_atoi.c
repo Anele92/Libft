@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 08:59:49 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/01 08:20:23 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/01 16:17:44 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int			ft_atoi(const char *str)
 	r = 0;
 	counter = 0;
 	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	if (str[i] == '+')
 		i++;
 	if (str[i] == '-')
 	{

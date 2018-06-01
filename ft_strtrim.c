@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 15:38:48 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/01 08:37:19 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/01 16:10:27 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strtrim(const char *s)
 {
 	size_t	start;
 	size_t	len;
-	char *str;
+	char	*str;
 
 	start = 0;
 	if (!s)
