@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 10:55:59 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/28 16:38:10 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/01 10:59:09 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr(char *str)
 	int i;
 
 	i = 0;
+	if (!(str))
+		return ;
 	while (str[i] != '\0')
 	{
 		ft_putchar(str[i]);

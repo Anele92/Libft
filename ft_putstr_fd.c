@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 14:02:21 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/28 14:09:04 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/01 11:00:50 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char const *s, int fd)
 	int		i;
 
 	i = 0;
+	if (!(s))
+		return ;
 	while (s[i] != '\0')
 	{
 		write(fd, &s[i], 1);

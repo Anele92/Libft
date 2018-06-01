@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 15:38:48 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/31 15:10:46 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/01 08:37:19 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,4 @@ char	*ft_strtrim(const char *s)
 	if (str)
 		return (str);
 	return (NULL);
-}
-
-int		main(void)
-{
-	char	name[] = "   	Zolile	 ";
-
-	printf("%s\n", ft_strtrim(name));
-	return (0);
 }

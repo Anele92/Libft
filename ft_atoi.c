@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 08:59:49 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/31 10:47:43 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/01 08:20:23 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	ft_ret(int n)
 	return (-1);
 }
 
-int		ft_atoi(const char *str)
+int			ft_atoi(const char *str)
 {
 	int		i;
 	int		r;
