@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 10:25:10 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/28 16:17:12 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/04 14:15:57 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,10 @@
 
 char	*ft_strnew(size_t size)
 {
-	char		*s;
-	size_t		i;
+	char	*s;
 
-	s = malloc(sizeof(char) * size + 1);
-	i = 0;
-	if (!s)
-		return (0);
-	while (s[i])
-	{
-		s[i] = '\0';
-		i++;
-	}
+	if (!(s = (char *)malloc(sizeof(char) * (size + 1))))
+		return (NULL);
+	ft_memset(s, '\0', size + 1);
 	return (s);
 }
