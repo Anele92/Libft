@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 17:05:46 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/04 13:30:58 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/05 12:32:39 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ void	ft_memdel(void **ap);
 void	*ft_memmove(void *s1, const void *s2, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_putchar(char c);
+int		ft_words(char const *s, char c);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl(char	const *s);
 void	ft_putendl_fd(char const *s, int fd);
@@ -51,6 +52,7 @@ int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strcpy(char *dest, char *str);
 void	ft_strdel(char **as);
 char	*ft_strdup(char *src);
+char	*ft_strndup(const char *s, size_t n);
 int		ft_strequ(char const *s1, char const *s2);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
