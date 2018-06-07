@@ -3,7 +3,19 @@
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	if ((*alst)->next)
-		ft_lstdel(&((*alst)->next), del);
-	ft_lstdelone(alst, del);
+	t_list		*next;
+	t_list		*curr;
+
+	if (del && alst)
+	{
+		curr = *alst;
+		while (curr != NULL)
+		{
+			next = curr->next;
+			(*del)(curr->content, curr->content_size);
+			free(curr);
+			curr = next;
+		}
+		*alst = NULL;
+	}
 }
