@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/28 08:18:54 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/05 12:47:16 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/08 08:52:18 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char				**ft_strsplit(char const *s, char c)
 			i++;
 		if (i > j)
 		{
-			tab[k++] = ft_strndup((char *)(s + j), i - j);
+			tab[k++] = ft_strndup(s + j, i - j);
 		}
 	}
 	tab[k] = NULL;
