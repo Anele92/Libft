@@ -6,7 +6,7 @@
 #    By: anoroita <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/30 12:24:33 by anoroita          #+#    #+#              #
-#    Updated: 2018/06/08 14:19:49 by anoroita         ###   ########.fr        #
+#    Updated: 2018/06/08 16:15:11 by anoroita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,19 +25,21 @@ ft_putnbr_fd.c ft_strchr.c ft_strdel.c ft_striteri.c ft_strmap.c\
 ft_strncpy.c ft_strrchr.c ft_tolower.c ft_strsplit.c ft_lstadd.c\
 ft_lstnew.c ft_lstdel.c ft_lstdelone.c ft_lstmap.c ft_lstiter.c\
 
+HEAD = libft.h
+
 OBJ = $(SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME):
-	@gcc -c -Wall -Wextra -Werror $(SRCS)
-	@ar rc $(NAME) $(OBJ)
-	@ranlib $(NAME)
+	gcc -c -Wall -Wextra -Werror $(SRCS) -I $(HEAD)
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 clean:
-	@/bin/rm -f *.o
+	/bin/rm -f *.o
 
 fclean: clean
-	@/bin/rm -f $(NAME)
+	/bin/rm -f $(NAME)
 
 re: fclean all

@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 16:19:38 by anoroita          #+#    #+#             */
-/*   Updated: 2018/05/30 12:43:52 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/08 15:05:37 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		while (little[j] && big[i + j] && (big[i + j] == little[j]) &&
 				(i + j) < len)
 		{
-			if ((int)j == (ft_strlen((char *)little) - 1))
+			if (j == (ft_strlen((char *)little) - 1))
 				return ((char *)&big[i]);
 			j++;
 		}
