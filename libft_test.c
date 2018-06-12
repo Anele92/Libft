@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/12 09:34:14 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/12 17:11:18 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/12 18:44:08 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -135,9 +135,9 @@ int		main(void)
 	{
 		printf("\nft_memdel() SUCESS\n");
 		green();
-        printf("TEST PASSED - OK!");
-        reset();
-        printf("(line 133)\n\n");
+		printf("TEST PASSED - OK!");
+		reset();
+		printf("(line 133)\n\n");
 	}
 
 	test_ft("ft_memchr.c","Function locates the first occurrence of c (converted to an unsigned char) in string b.");
@@ -149,15 +149,15 @@ int		main(void)
 	{
 		printf ("\nAfter ft_memchr() :|%s| was found\n", find);
 		green();
-        printf("TEST PASSED - OK!");
-        reset();
-        printf("(line 147)\n\n");
+		printf("TEST PASSED - OK!");
+		reset();
+		printf("(line 147)\n\n");
 	}
 	else
 		printf("Search character not found\n");
 
 	test_ft("ft_memalloc.c","Allocates - with malloc(3) and returns a “fresh” memory area or else NULL.");
-	
+
 	void	*alloc;
 
 	alloc = ft_memalloc(20);
@@ -169,9 +169,9 @@ int		main(void)
 	{
 		printf("\nMemory sucessffully allocated!\n");
 		green();
-        printf("TEST PASSED - OK!");
-        reset();
-        printf("(line 163)\n\n");
+		printf("TEST PASSED - OK!");
+		reset();
+		printf("(line 163)\n\n");
 	}
 
 	test_ft("ft_atoi.c","The atoi function converts the initial portion of the string point to by str to\n int representation.");
@@ -180,14 +180,104 @@ int		main(void)
 		printf("\nft_atoi(\"-4578\") || ft_atoi(\"+125\") || ft_atoi(\"    999\") || ft_atoi(\"1247\")\n");
 		printf("Converted successfully\n");
 		green();
-        printf("TEST PASSED - OK!");
-        reset();
-        printf("(line 178)\n\n");
+		printf("TEST PASSED - OK!");
+		reset();
+		printf("(line 178)\n\n");
 	}
 	else
 		printf("Tests FAILED");
 
+	test_ft("ft_isalnum.c","Checks via ascii table if parameter c is an alphabet or digit");
 
+	if (ft_isalnum(48) || ft_isalnum('A') || ft_isalnum('e') || ft_isalnum('9'))
+	{
+		cyan();
+		printf("\nALL CHECKED : SUCCESS!");
+		reset();
+		green();
+		printf("\nTEST PASSED - OK!");
+		reset();
+		printf("(line 192)\n\n");
+
+	}
+
+	test_ft("ft_isalpha.c", "Checks via ascii table if the given parameter is an alphabet");
+	if (ft_isalpha('A') || ft_isalpha('z') || ft_isalpha('G' || ft_isalpha('a')))
+	{
+		cyan();
+		printf("\nALL CHECKED : SUCCESS!");
+		reset();
+		green();
+		printf("\nTEST PASSED - OK!");
+		reset();
+		printf("(line 205)\n\n");
+	}
+	printf("\nTEST FAILED\n");
+
+	test_ft("ft_isascii.c","Checks via ascii table if the given parameter is an ascii character");
+	if (ft_isascii('*') || ft_isascii('%') || ft_isascii(':'))
+	{
+		cyan();
+		printf("\nALL CHECKED : SUCCESS!");
+		reset();
+		green();
+		printf("\nTEST PASSED - OK!");
+		reset();
+		printf("(line 217)\n\n");
+	}
+	printf("\nTEST FAILED\n");
+	
+	test_ft("ft_isdigit.c","Checks via ascii table if the given parameter is a digit");
+	if (ft_isdigit('9') || ft_isdigit('0') || ft_isdigit('7'))
+	{
+		cyan();
+        printf("\nALL CHECKED : SUCCESS!");
+        reset();
+        green();
+        printf("\nTEST PASSED - OK!");
+        reset();
+        printf("(line 229)\n\n");
+	}
+	printf("\nTEST FAILED\n");
+
+	test_ft("ft_isprint.c","Checks if the given argument is whithin the printable characters in ascii");
+	if (ft_isprint('A') && ft_isprint(' ') && ft_isprint('\n') && ft_isprint('\t'))
+	{
+		cyan();
+        printf("\nALL CHECKED : SUCCESS!");
+        reset();
+        green();
+        printf("\nTEST PASSED - OK!");
+        reset();
+	}
+	else
+	{
+		red();
+		printf("\n(line 244) --");
+		printf("SOME OF THE VALUES ARE NON-PRINTABLE\n");
+		reset();
+	}
+
+	test_ft("ft_itoa.c","Takes an integer constant and converts it to a character literal");
+	char *res;
+
+	res = ft_itoa(3546);
+	if (res)
+	{
+		cyan();
+		printf("\nConverted value - \"%s\"", res);
+        reset();
+		green();
+		printf("\nTEST PASSED - OK!");
+        reset();
+        printf("(line 264)\n\n");
+	}
+	else
+	{
+		red();
+		printf("\nTEST FAILED\n");
+		reset();
+	}
 
 
 
