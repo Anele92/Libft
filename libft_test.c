@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/12 09:34:14 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/13 16:52:37 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/13 16:56:22 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -820,16 +820,16 @@ int		main(void)
 	else
 		printf("You darn fucked up!\n");
 	ft_lstdel(&head, f_lstdel);
-	return (0);
 	green();
 	printf("\nTEST PASSED - OK!");
 	reset();
 	printf("(line 827)\n\n");
 
-	printf("~~~~~~~~~~~~~~ MAIN TEST DONE> BY ANELE NOROITA - ANOROITA~~~~~~~~~~~~~~~~~~~~");
-	printf("~~~~~~~~~~~~~~ MAIN TEST DONE> BY ANELE NOROITA - ANOROITA~~~~~~~~~~~~~~~~~~~~");
-	printf("~~~~~~~~~~~~~~ MAIN TEST DONE> BY ANELE NOROITA - ANOROITA~~~~~~~~~~~~~~~~~~~~");
-	printf("~~~~~~~~~~~~~~ MAIN TEST DONE> BY ANELE NOROITA - ANOROITA~~~~~~~~~~~~~~~~~~~~");
-
+	green();
+	printf("~~~~~~~~~~~~~~ MAIN TEST DONE> BY ANELE NOROITA - ANOROITA~~~~~~~~~~~~~~~~~~~~\n");
+	printf("~~~~~~~~~~~~~~ MAIN TEST DONE> BY ANELE NOROITA - ANOROITA~~~~~~~~~~~~~~~~~~~~\n");
+	printf("~~~~~~~~~~~~~~ MAIN TEST DONE> BY ANELE NOROITA - ANOROITA~~~~~~~~~~~~~~~~~~~~\n");
+	printf("~~~~~~~~~~~~~~ MAIN TEST DONE> BY ANELE NOROITA - ANOROITA~~~~~~~~~~~~~~~~~~~~\n");
+	reset();
 	return (0);
 }
