@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/12 09:34:14 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/13 16:47:48 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/13 16:50:38 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -828,3 +828,5 @@ int		main(void)
 
 	return (0);
 }
+
+printf("~~~~~~~~~~~~~~ MAIN TEST DONE> BY ANELE NOROITA - ANOROITA~~~~~~~~~~~~~~~~~~~~")
