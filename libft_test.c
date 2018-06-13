@@ -6,7 +6,7 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/12 09:34:14 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/13 16:12:21 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/13 16:47:48 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ int		main(void)
 		green();
 		printf("\nTEST PASSED - OK!");
 		reset();
-		printf("(line 54)\n\n");
+		printf("(line 90)\n\n");
 	}
 
 	test_ft("ft_bzero.c", "Function sets the first n bytes of the area starting at s to zero\n");
@@ -107,7 +107,7 @@ int		main(void)
 	green();
 	printf("TEST PASSED - OK!");
 	reset();
-	printf("(line 69)\n\n");
+	printf("(line 105)\n\n");
 
 	test_ft("ft_memcpy.c", "Copies n bytes from memory area src to memory area dest. The memory areas must not overlap.\n");
 
@@ -121,7 +121,7 @@ int		main(void)
 		green();
 		printf("TEST PASSED - OK!");
 		reset();
-		printf("(line 82)\n\n");
+		printf("(line 118)\n\n");
 	}
 
 
@@ -139,7 +139,7 @@ int		main(void)
 		green();
 		printf("TEST PASSED - OK!");
 		reset();
-		printf("(line 98)\n\n");
+		printf("(line 134)\n\n");
 	}
 	else
 		printf("The character wasn't found\n");
@@ -156,7 +156,7 @@ int		main(void)
 		green();
 		printf("TEST PASSED - OK!");
 		reset();
-		printf("(line 116)\n\n");
+		printf("(line 153)\n\n");
 	}
 
 
@@ -173,7 +173,7 @@ int		main(void)
 		green();
 		printf("TEST PASSED - OK!");
 		reset();
-		printf("(line 133)\n\n");
+		printf("(line 169)\n\n");
 	}
 
 	test_ft("ft_memchr.c","Function locates the first occurrence of c (converted to an unsigned char) in string b.");
@@ -187,7 +187,7 @@ int		main(void)
 		green();
 		printf("TEST PASSED - OK!");
 		reset();
-		printf("(line 147)\n\n");
+		printf("(line 183)\n\n");
 	}
 	else
 		printf("Search character not found\n");
@@ -207,7 +207,7 @@ int		main(void)
 		green();
 		printf("TEST PASSED - OK!");
 		reset();
-		printf("(line 163)\n\n");
+		printf("(line 199)\n\n");
 	}
 
 	test_ft("ft_atoi.c","The atoi function converts the initial portion of the string point to by str to\n int representation.");
@@ -218,7 +218,7 @@ int		main(void)
 		green();
 		printf("TEST PASSED - OK!");
 		reset();
-		printf("(line 178)\n\n");
+		printf("(line 214)\n\n");
 	}
 	else
 		printf("Tests FAILED");
@@ -233,7 +233,7 @@ int		main(void)
 		green();
 		printf("\nTEST PASSED - OK!");
 		reset();
-		printf("(line 192)\n\n");
+		printf("(line 228)\n\n");
 
 	}
 
@@ -246,7 +246,7 @@ int		main(void)
 		green();
 		printf("\nTEST PASSED - OK!");
 		reset();
-		printf("(line 205)\n\n");
+		printf("(line 241)\n\n");
 	}
 	printf("\nTEST FAILED\n");
 
@@ -259,7 +259,7 @@ int		main(void)
 		green();
 		printf("\nTEST PASSED - OK!");
 		reset();
-		printf("(line 217)\n\n");
+		printf("(line 254)\n\n");
 	}
 	printf("\nTEST FAILED\n");
 	
@@ -272,7 +272,7 @@ int		main(void)
         green();
         printf("\nTEST PASSED - OK!");
         reset();
-        printf("(line 229)\n\n");
+        printf("(line 267)\n\n");
 	}
 	printf("\nTEST FAILED\n");
 
@@ -289,7 +289,7 @@ int		main(void)
 	else
 	{
 		red();
-		printf("\n(line 244) --");
+		printf("\n(line 280)");
 		printf("SOME OF THE VALUES ARE NON-PRINTABLE\n");
 		reset();
 	}
@@ -306,7 +306,7 @@ int		main(void)
 		green();
 		printf("\nTEST PASSED - OK!");
         reset();
-        printf("(line 264)\n\n");
+        printf("(line 300)\n\n");
 	}
 	else
 	{
@@ -320,7 +320,7 @@ int		main(void)
 	green();
 	printf("\nTEST PASSED - OK!");
 	reset();
-	printf("(line 283)\n\n");
+	printf("(line 319)\n\n");
 
 	test_ft("ft_strdup.c","Allocates with malloc and copies dest string to memory source area");
 	char *s1_strdup = "Raja";
@@ -331,7 +331,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-	printf("(line 292)\n\n");
+	printf("(line 329)\n\n");
 
 	test_ft("ft_strndup.c","function copies at most len characters from the string str and NUL terminates");
 	char *s1_strndup = "Raja";
@@ -342,7 +342,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 304)\n\n");	
+    printf("(line 340)\n\n");	
 	
 	test_ft("ft_strcpy.c","Copies contents from one string to dest string");
 	char  dest_strcpy[200];
@@ -353,7 +353,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 315)\n\n");
+    printf("(line 351)\n\n");
 
 	test_ft("ft_strncpy.c","Copies up to len bytes from source string to destination string");
 	char dest_strncpy[55];
@@ -364,7 +364,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 327)\n\n");
+    printf("(line 363)\n\n");
 
 	test_ft("ft_strcat.c","Concatenates the src source to the end of dest string");
 	char dest_strcat[55] = "momma ";
@@ -373,7 +373,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 336)\n\n");
+    printf("(line 372)\n\n");
 
 	test_ft("ft_strncat.c","Contatenates up to the number of len bytes from source to dest string");
 	char dest_strncat[53] = "momma";
@@ -382,7 +382,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 381)\n\n");
 	
 	test_ft("ft_strlcat.c","Function appends the NUL-terminated string src to the end of dst.\n It will return the length of both and append at most size - strlen(dst) - 1 bytes,\n NUL-terminating the result.");
 	char dest_strlcat[] = "momma";
@@ -392,7 +392,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 355)\n\n");
+    printf("(line 391)\n\n");
 
 
 	test_ft("ft_strchr.c","Function returns a pointer to the first occurrence of the character c in str.");
@@ -404,7 +404,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 366)\n\n");
+    printf("(line 402)\n\n");
 
 	test_ft("ft_strrchr","Returns a pointer to the last ocuurance of the character c in str");
 	res_strchr = ft_strrchr(str_strchr, ch_strchr);
@@ -412,7 +412,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 374)\n\n");
+    printf("(line 410)\n\n");
 
 
 	test_ft("ft_strstr.c","Function finds the first occurrence of the substring needle in the string haystack.");
@@ -422,7 +422,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 385)\n\n");
+    printf("(line 421)\n\n");
 
 
 	test_ft("ft_strnstr.c","Function locates the first occurrence of the null-terminated string little in the\nstring big, where not more than	len characters are searched.");
@@ -430,7 +430,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 393)\n\n");
+    printf("(line 429)\n\n");
 
 	test_ft("ft_strcmp.c","Functions lexicographically compare the null-terminated strings s1 and s2.");
 	char s1_strcmp[15];
@@ -451,7 +451,7 @@ int		main(void)
 	green();
     printf("TEST PASSED - OK!");
     reset();
-    printf("(line 407)\n\n");
+    printf("(line 443)\n\n");
 	 
 	
 	test_ft("ft_strncmp.c","Function compares not more than len characters");
@@ -466,7 +466,7 @@ int		main(void)
 	green();
     printf("TEST PASSED - OK!");
     reset();
-    printf("(line 422)\n\n");
+    printf("(line 458)\n\n");
 
 
 
@@ -476,7 +476,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 443)\n\n");
+    printf("(line 474)\n\n");
 
 
 	test_ft("ft_tolower.c","Converts from uppercase to lowercase");
@@ -485,7 +485,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 447)\n\n");
+    printf("(line 483)\n\n");
 
 	test_ft("ft_strnew.c","Allocates (with malloc(3)) and returns a “fresh” string ending with ’\0’.");
 	char **po;
@@ -498,7 +498,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 456)\n\n");
+    printf("(line 492)\n\n");
 
 
 	test_ft("ft_strdel.c","Takes address of a string that need to be freed with free(3), & sets its pointer to NUL.");
@@ -512,7 +512,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 470)\n\n");
+    printf("(line 506)\n\n");
 
 
 	test_ft("ft_strclr.c","Sets every character of the string to the value ’\0’.");
@@ -525,7 +525,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 484)\n\n");
+    printf("(line 520)\n\n");
 
 	test_ft("ft_striter.c","Applies the function f to each character of the string passed as argument.\n Each character is passed by address to f to be modified if necessary.");
 	void (*f_iter)(char *);
@@ -540,7 +540,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 499)\n\n");
+    printf("(line 535)\n\n");
 
 	test_ft("ft_striteri.c","Applies the function f to each character of the string passed as argument, and\n passing its index as first argument. Each character is passed by address to f \nto be modified if necessary.");
     void (*f_iteri)(unsigned int, char *);
@@ -555,7 +555,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 514)\n\n");
+    printf("(line 550)\n\n");
 
 	test_ft("ft_strmap.c","Applies the function f to each character of the string given as argument to create a \n“fresh” new string (with malloc(3))resulting from the successive applications of f.");
 	char (*f_map)(char);
@@ -568,7 +568,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 528)\n\n");
+    printf("(line 564)\n\n");
 
 	test_ft("ft_strmapi.c","Applies the function f to each character of the string passed as argument by giving its \nindex as first argument to create a “fresh” new string (with malloc(3)) \nresulting from the successive applications of f.");
 	char (*f_mapi)(unsigned int, char);
@@ -581,7 +581,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 577)\n\n");
 
 	test_ft("ft_strequ.c","Lexicographical comparison between s1 and s2.");
 	int y;
@@ -591,7 +591,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 588)\n\n");
 
 	test_ft("ft_strenqu.c","Lexicographical comparison between s1 and s2 up to n characters or until a ’\0’ is reached.");
 	y = ft_strnequ("momma", "mommy", 4);
@@ -600,7 +600,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 597)\n\n");
 
 	test_ft("ft_strsub.c","The substring begins at index \"start\" and is of size \"len.\"");
 	char	s_long[] = "momma knows";
@@ -614,21 +614,21 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 609)\n\n");
 
 	test_ft("ft_strjoin.c","Returns the result of the concatenation of s1 and s2.");
 	printf("\nStrjoin result: %s", ft_strjoin("momma", " knows"));
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 620)\n\n");
 
 	test_ft("ft_strtrim.c","Returns a fresh string without whitespaces at the beginning and end");
 	printf("\nStrimmed string: %s", ft_strtrim(" 	momma	"));
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 627)\n\n");
 
 	test_ft("ft_strsplit.c","Returns an array of “fresh” strings (all ending with NUL, including the array itself)\n obtained by spliting s using the character c as a delimiter.");
 	char **str;
@@ -637,7 +637,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 636)\n\n");
 
 	test_ft("ft_putchar.c", "Prints a character on STDOUT");
 	ft_putstr("Ft_putchar: ");
@@ -646,7 +646,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 644)\n\n");
 
 	test_ft("ft_putstr.c","Outputs the string s to the standard output.");
 	
@@ -654,14 +654,14 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 653)\n\n");
 
 	test_ft("ft_putendl.c","Outputs the string s to the standard output, followed by a newline");
 	ft_putendl("Ft_putendl: momma knows best");
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 660)\n\n");
 
 	test_ft("ft_putnbr.c","Outputs the integer n to the standard output.");
 	ft_putstr("Putnbr: ");
@@ -673,7 +673,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 668)\n\n");
 
 	test_ft("ft_putchar_fd.c","Outputs the char c to the file descriptor fd.");
 	ft_putstr("Ft_putchar _fd: ");
@@ -686,7 +686,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 680)\n\n");
 
 	test_ft("ft_putstr_fd.c","Outputs the string s to the file descriptor fd.");
 	ft_putstr("Ft_putstr_fd: ");
@@ -699,11 +699,11 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 693)\n\n");
 
 
 	test_ft("ft_putendl_fd.c","Outputs the string s to the file descriptor fd followed by a ’newline’.");
-	ft_putstr("Ft_puendl_fd: ");
+	ft_putstr("Ft_putendl_fd: ");
 	ft_putendl_fd("momma knows best", 0);
 	ft_putstr("Ft_putendl_fd: ");
 	ft_putendl_fd("momma knows best", 1);
@@ -712,7 +712,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 707)\n\n");
 
 	test_ft("ft_putnbr_fd.c","Outputs the integer n to the file descriptor fd.");
 	ft_putstr("Ft_putnbr_fd: ");
@@ -724,7 +724,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 719)\n\n");
 
 	test_ft("ft_lstnew","Returns a new link");
 	t_list	*node;
@@ -737,7 +737,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 732)\n\n");
 
 	test_ft("ft_lstdelone.c","Frees the memory of the link’s content using the function del given as a parameter,\n then frees the link’s memory using free(3).");
 	void (*del)(void *, size_t);
@@ -750,7 +750,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 742)\n\n");
 
 	test_ft("ft_lstadd.c","Adds the element new at the beginning of the list.");
 	t_list	*node1;
@@ -769,7 +769,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 763)\n\n");
 
 	test_ft("ft_lstiter.c","Iterates the list lst and applies the function f to each link.");
 	t_list	*temp;
@@ -792,7 +792,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 785)\n\n");
 
 	test_ft("ft_lstmap.c","Iterates a list lst and applies the function f to each link to create a “fresh” list");
     t_list *(*f_lstmap)(t_list*);
@@ -808,7 +808,7 @@ int		main(void)
 	green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 801)\n\n");
 
 	test_ft("ft_lstdel.c","frees the memory of this link and every successors of that link using the functions del and free(3).");
 	void (*f_lstdel)(void*, size_t);
@@ -824,7 +824,7 @@ int		main(void)
     green();
     printf("\nTEST PASSED - OK!");
     reset();
-    printf("(line 345)\n\n");
+    printf("(line 827)\n\n");
 
 	return (0);
 }
