@@ -6,27 +6,27 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/05 12:28:15 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/05 12:38:53 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/14 15:13:58 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int          ft_words(char const *s, char c)
+int		ft_words(char const *s, char c)
 {
-    unsigned int    i;
-    int             cntr;
+	unsigned int	i;
+	int				cntr;
 
-    i = 0;
-    cntr = 0;
-    while (s[i])
-    {
-        while (s[i] == c)
-            i++;
-        if (s[i] != '\0')
-            cntr++;
-        while (s[i] && (s[i] != c))
-            i++;
-    }
-    return (cntr);
+	i = 0;
+	cntr = 0;
+	while (s[i])
+	{
+		while (s[i] == c)
+			i++;
+		if (s[i] != '\0')
+			cntr++;
+		while (s[i] && (s[i] != c))
+			i++;
+	}
+	return (cntr);
 }
