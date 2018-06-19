@@ -1,40 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/28 10:45:38 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/14 07:41:18 by anoroita         ###   ########.fr       */
+/*   Created: 2018/06/14 07:17:14 by anoroita          #+#    #+#             */
+/*   Updated: 2018/06/14 07:18:41 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char			*ft_itoa(int n)
+void	ft_swap(int *a, int *b)
 {
-	size_t	i;
-	size_t	n_size;
-	char	*str;
+	int tmp_a;
 
-	i = 0;
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	n_size = ft_nbrlen(n);
-	if (!(str = (char *)malloc(sizeof(char) * (n_size + 1))))
-		return (NULL);
-	str[n_size] = 0;
-	if (n < 0)
-	{
-		str[0] = '-';
-		n *= -1;
-		i += 1;
-	}
-	while (i < n_size--)
-	{
-		str[n_size] = (n % 10) + '0';
-		n /= 10;
-	}
-	return (str);
+	tmp_a = *a;
+	*a = *b;
+	*b = tmp_a;
 }

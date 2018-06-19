@@ -6,19 +6,19 @@
 /*   By: anoroita <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/22 15:06:18 by anoroita          #+#    #+#             */
-/*   Updated: 2018/06/01 15:50:57 by anoroita         ###   ########.fr       */
+/*   Updated: 2018/06/15 07:42:35 by anoroita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strstr(char *str, char *to_find)
+char	*ft_strstr(const char *str, const char *to_find)
 {
 	int i;
 	int j;
 
 	if (to_find[0] == '\0')
-		return (str);
+		return ((char *)str);
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -30,7 +30,7 @@ char	*ft_strstr(char *str, char *to_find)
 			j++;
 		}
 		if (to_find[j] == '\0')
-			return (str + i);
+			return ((char *)str + i);
 		i++;
 	}
 	return (0);

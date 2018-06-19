@@ -6,13 +6,14 @@
 #    By: anoroita <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/30 12:24:33 by anoroita          #+#    #+#              #
-#    Updated: 2018/06/08 16:15:11 by anoroita         ###   ########.fr        #
+#    Updated: 2018/06/14 08:13:58 by anoroita         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRCS = ft_isalnum.c ft_isprint.c ft_memchr.c ft_memmove.c ft_putendl.c\
+SRCS = ft_isalnum.c ft_isprint.c ft_memchr.c ft_memmove.c\
+ft_putendl.c ft_swap.c ft_strrev.c ft_nbrlen.c ft_abs.c\
 ft_putstr.c ft_strclr.c ft_strdup.c ft_strjoin.c ft_strmapi.c\
 ft_strnequ.c ft_strstr.c ft_toupper.c ft_isalpha.c ft_itoa.c\
 ft_memcmp.c ft_memset.c ft_putendl_fd.c ft_putstr_fd.c ft_strcmp.c\
